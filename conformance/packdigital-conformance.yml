@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.packdigital.com/api-reference/content-management-api
+standards:
+  - id: graphql
+    conforms: true
+    evidence: Content Management API is a GraphQL API at https://app.packdigital.com/graphql.
+  - id: relay-cursor-connections
+    conforms: true
+    evidence: List queries use cursor pagination with first/last/after/before and edge/node/pageInfo shapes.
+  - id: oauth2
+    conforms: false
+    evidence: Auth is token-in-header (secret/public access tokens), not OAuth2.
+  - id: openid-connect
+    conforms: false
+  - id: rfc9457-problem-details
+    conforms: false
+    evidence: Errors returned via GraphQL errors[] array, not application/problem+json.
+  - id: model-context-protocol
+    conforms: true
+    evidence: Official hosted MCP server at https://pack-agent.packdigital.workers.dev/mcp.
+  - id: llms-txt
+    conforms: true
+    evidence: Publishes https://docs.packdigital.com/llms.txt and llms-full.txt.

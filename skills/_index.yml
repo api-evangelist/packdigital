@@ -1,0 +1,17 @@
+generated: '2026-07-20'
+method: generated
+source: https://docs.packdigital.com/api-reference/content-management-api
+api: graphql (https://app.packdigital.com/graphql)
+skills:
+  - file: packdigital-publish-a-page.md
+    name: Create, review, and publish a storefront page
+    api: https://app.packdigital.com/graphql
+    operations: [pageCreate, pageUpdate, pageAddSectionsBulk, pagePublish]
+  - file: packdigital-schedule-content.md
+    name: Schedule content to go live
+    api: https://app.packdigital.com/graphql
+    operations: [scheduleCreate, scheduleAddContent, schedulePublish]
+  - file: packdigital-run-ab-test.md
+    name: Run and manage an A/B test via the Pack MCP server
+    api: https://pack-agent.packdigital.workers.dev/mcp
+    operations: [list_ab_tests, update_ab_test, start_ab_test, pause_ab_test, end_ab_test]

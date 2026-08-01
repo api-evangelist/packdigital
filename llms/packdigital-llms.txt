@@ -1,0 +1,202 @@
+# Pack Digital Documentation
+
+> Pack Digital is the digital experience platform purpose-built for Shopify Hydrogen. Build, manage, and optimize headless storefronts with visual content management, A/B testing, and developer-friendly APIs.
+
+For the complete documentation in markdown format, see: https://docs.packdigital.com/llms-full.txt
+
+## Getting Started
+- [Introduction](/getting-started/introduction): Learn what Pack Digital is, its core concepts, benefits, and how it helps Shopify merchants build high-performance Hydrogen storefronts.
+- [Quickstart](/getting-started/quickstart): This guide will get you all set up and ready to manage your Hydrogen storefront or shop
+- [Blueprint Setup](/developer-resources/blueprint-setup): This guide assists you in setting up Pack's Blueprint Theme on your local machine.
+- [Storefront Setup](/getting-started/storefront-setup): Learn how to create a new Storefront in Pack and link your Shopify store to Pack.
+- [Hydrogen Integration](/developer-resources/add-to-hydrogen): The guide will help you install Pack on your existing Hydrogen project.
+- [FAQ & Troubleshooting](/getting-started/faq): Find answers to common questions and troubleshooting tips for using Pack.
+
+## Create & Manage Content
+- [Content Management](/create-manage-content/content-management): Guide to Managing Your Content
+- [Customizer](/create-manage-content/customizer): The Customizer is a visual store editing tool that makes teamwork a breeze for both devs and content creators in one simple to use experience
+- [Global Settings](/create-manage-content/global-settings): Learn how to manage global content elements in your Pack-powered Hydrogen storefront using the Customizer.
+- [Properties Panel](/create-manage-content/properties-panel)
+- [Sections](/create-manage-content/sections): Learn how to manage your sections.
+- [Templates](/create-manage-content/templates): Learn how to manage your templates.
+- [Layouts](/create-manage-content/layouts): Learn how to save, manage, and apply reusable layouts to streamline page creation in the Pack Customizer.
+- [Content Releases](/create-manage-content/content-releases): Learn how to prepare, review, and publish coordinated content changes in Pack with Content Releases.
+- [Publishing](/create-manage-content/publishing): Learn how to publish your content.
+- [Previewing](/create-manage-content/previewing): Learn how to effectively preview your content in the Customizer to ensure optimal display across various devices.
+- [Scheduling](/create-manage-content/scheduling): Learn how to schedule your content to go live at a specified time.
+- [Environments](/create-manage-content/content-environments): Learn how to create and manage different versions of your content independently using content environments.
+- [SEO](/create-manage-content/seo): Learn how to manage your Storefront’s SEO settings and improve your visibility on search engines.
+- [Redirects](/create-manage-content/redirects): Learn how to manage redirects for your Hydrogen site.
+- [Products](/create-manage-content/products): Learn how to manage products in Pack.
+- [Media](/create-manage-content/media-manager): Manage your media effortlessly with Pack’s Media Manager, accessible via Pack Admin and the Customizer.
+- [Localization](/create-manage-content/localization): Learn how to localize your storefront or shop to reach more customers and drive sales.
+- [Organizations & Storefronts](/create-manage-content/organizations-storefronts): Complete guide on managing team member roles, access, invitations, and removals within your Pack organization.
+
+## Developer Resources
+- [Hydrogen](/developer-resources/add-to-hydrogen): The guide will help you install Pack on your existing Hydrogen project.
+- [Pack MCP](/developer-resources/pack-mcp): Connect AI assistants to Pack with the Model Context Protocol to search, edit, preview, publish, and analyze Pack content.
+- [Overview](/developer-resources/blueprint-overview): Pack’s Blueprint Theme is an advanced, component-based Hydrogen theme designed to help you spin up a Shopify Hydrogen storefront quickly.
+- [Setup](/developer-resources/blueprint-setup): This guide assists you in setting up Pack's Blueprint Theme on your local machine.
+- [Container Settings](/developer-resources/blueprint-container-settings)
+- [Sections](/developer-resources/blueprint-sections): This guide goes over Blueprint sections for your Pack storefront.
+- [Admin Requirements](/developer-resources/blueprint-admin-requirements): This guide outlines the administrative requirements and specifications for various content sections within the Pack Blueprint theme.
+- [Hosting](/developer-resources/hosting): How to host your Storefront or Shop
+- [Preview URLs](/developer-resources/preview-urls): Learn about preview URLs and how to manage them in Hydrogen storefronts and shops.
+- [Environments](/developer-resources/content-environments): Learn how to use content environments in your development and editing workflow.
+- [Templates](/developer-resources/templates): Learn how to manage your templates.
+- [Schema API](/developer-resources/section-schema-api): On this page, we’ll dive into section schemas and what fields are available for your sections.
+- [Metaobjects](/developer-resources/metaobjects): Learn how to work with metaobjects in your storefront or shop.
+- [CMS Models](/developer-resources/cms-models): Explore the structure and implementation of content models in Pack CMS, including pages, blogs, articles, and more.
+- [Customizer UI](/developer-resources/customizer-ui): Learn about the customizer overlay, and how to add section field hotspots.
+- [Global Settings Implementation](/developer-resources/global-settings): Learn how to implement global content elements like headers, footers, and site-wide settings in a Pack-powered Hydrogen storefront from a technical perspective.
+- [Properties Panel Implementation](/developer-resources/properties-panel)
+- [Localization Implementation](/developer-resources/localization): Learn how to enable localization in your Pack Hydrogen storefront and fetch translated content via GraphQL.
+
+## API & SDK Reference
+- [Content API](/api-reference/content-management-api): On this page, we’ll dive into the different contact endpoints you can use to manage contacts programmatically.
+- [A/B Testing API](/api-reference/ab-testing-api): Pack is now offering an easy way to A/B testing. Learn more about Pack A/B testing here.
+- [@pack/client](/api-reference/pack-client): The @pack/client package provides a client for interacting with the Pack GraphQL API.
+- [@pack/react](/api-reference/pack-react): The @pack/react package provides SDKs and components to enable your React app to connect with Pack.
+- [@pack/hydrogen](/api-reference/pack-hydrogen): The @pack/hydrogen package provides clients and utilities to get Pack running on your Hydrogen storefront.
+- [@pack/types](/api-reference/pack-types): @pack/types provides TypeScript definitions for Pack projects, enabling strong type-checking of sections and data to enhance code quality and developer productivity.
+
+## Testing & Analytics
+- [A/B Testing](/testing-analytics/ab-testing): Pack is now offering an easy way to perform A/B testing. Learn more about Pack A/B testing here.
+- [Test Implementation](/testing-analytics/test-implementation): This guide covers the implementation of A/B testing in a Pack storefront application.
+- [GTM & GA4 Integration](/testing-analytics/gtm-integration): Learn how to set up Google Tag Manager and GA4 for A/B experiment tracking, including user properties for report segmentation.
+- [BigQuery Integration](/testing-analytics/bigquery-integration): Connect GA4 to BigQuery and integrate with Pack for raw event-level A/B test data, custom SQL queries, and long-term data retention.
+- [Consent Management](/testing-analytics/consent-management): Learn how to manage user consent for A/B testing in your application, ensuring compliance with privacy regulations and proper event tracking.
+- [Best Practices](/testing-analytics/best-practices): The guide will help you understand how to set up Pack’s A/B testing feature and best practices for analyzing your test results.
+- [KPI Events](/testing-analytics/kpi-events): Learn about Pack's basic storefront events that we track for your convenience.
+
+## Implementation Guides
+- [Migration](/implementation-guides/hydrogen-migration)
+- [Route implementation](/implementation-guides/route-implementation): The guide will help you understand how to set up Pack’s A/B testing feature and best practices for analyzing your test results.
+- [Hydrogen Issues](/implementation-guides/hydrogen-issues): The guide will help you understand how to set up Pack’s A/B testing feature and best practices for analyzing your test results.
+- [Vite Migration](/implementation-guides/vite-migration): Shopify Hydrogen officially requires Vite with the 2025.4.0 version, in replacement of the legacy Remix compiler. This guide outlines the necessary steps for migrating your Pack store to Vite.
+- [React Router 7 Preparation](/implementation-guides/react-router-7-preparation): Version 2025.4.0 and higher for @shopify/hydrogen and @shopify/hydrogen-react have adopted React Router 7. This guide outlines the necessary steps for preparing your Pack store for this migration.
+- [SSR Cart Migration](/implementation-guides/ssr-cart-migration): This guide outlines the steps to migrate a Pack Hydrogen storefront using client-side cart with server-side cart
+- [React Router 7 Migration](/implementation-guides/react-router-7-migration): This guide outlines the necessary steps to migrate a Pack Hydrogen storefront with Remix to one with React Router 7
+- [Customer Account API Migration](/implementation-guides/customer-account-migration): The guide will help you understand how to migrate from the legacy customer accounts to the new Customer Account API.
+- [B2B Integration](/implementation-guides/b2b-integration): The guide will help you understand how to integrate Shopify's B2B functionality.
+
+## Documentation Overview
+- [Documentation Overview](/documentation-overview): Complete sitemap of Pack documentation.
+
+## Optional - API Mutations
+- [articleAddSectionsBulk - Mutation](/api-reference/content-management-api/mutations/articleAddSectionsBulk): Assign sections to multiple articles.
+- [articleCreate - Mutation](/api-reference/content-management-api/mutations/articleCreate): Creates an article.
+- [articleDelete - Mutation](/api-reference/content-management-api/mutations/articleDelete): Deletes an article.
+- [articleDeleteBulk - Mutation](/api-reference/content-management-api/mutations/articleDeleteBulk): Bulk delete articles.
+- [articlePublish - Mutation](/api-reference/content-management-api/mutations/articlePublish): Publishes an article.
+- [articlePublishBulk - Mutation](/api-reference/content-management-api/mutations/articlePublishBulk): Bulk publish articles.
+- [articleRestore - Mutation](/api-reference/content-management-api/mutations/articleRestore): Restores an article to a specific revision.
+- [articleUnpublish - Mutation](/api-reference/content-management-api/mutations/articleUnpublish): Unpublishes article.
+- [articleUnpublishBulk - Mutation](/api-reference/content-management-api/mutations/articleUnpublishBulk): Bulk unpublish articles.
+- [articleUpdate - Mutation](/api-reference/content-management-api/mutations/articleUpdate): Updates an article.
+- [articleUpdateBulk - Mutation](/api-reference/content-management-api/mutations/articleUpdateBulk): Allows you to bulk update articles.
+- [blogAddSectionsBulk - Mutation](/api-reference/content-management-api/mutations/blogAddSectionsBulk): Assign a sections to multiple blogs.
+- [blogCreate - Mutation](/api-reference/content-management-api/mutations/blogCreate): Creates a blog.
+- [blogDelete - Mutation](/api-reference/content-management-api/mutations/blogDelete): Deletes a blog.
+- [blogDeleteBulk - Mutation](/api-reference/content-management-api/mutations/blogDeleteBulk): Bulk delete blogs.
+- [blogPublish - Mutation](/api-reference/content-management-api/mutations/blogPublish): Publishes a blog.
+- [blogPublishBulk - Mutation](/api-reference/content-management-api/mutations/blogPublishBulk): Bulk publish blogs.
+- [blogRestore - Mutation](/api-reference/content-management-api/mutations/blogRestore): Restores a blog to a specific revision.
+- [blogUnpublish - Mutation](/api-reference/content-management-api/mutations/blogUnpublish): Unpublishes blog.
+- [blogUnpublishBulk - Mutation](/api-reference/content-management-api/mutations/blogUnpublishBulk): Bulk unpublish blogs.
+- [blogUpdate - Mutation](/api-reference/content-management-api/mutations/blogUpdate): Updates a blog.
+- [blogUpdateBulk - Mutation](/api-reference/content-management-api/mutations/blogUpdateBulk): Allows you to bulk update blogs.
+- [collectionPageAddSectionsBulk - Mutation](/api-reference/content-management-api/mutations/collectionPageAddSectionsBulk): Add multiple sections to multiple pages.
+- [collectionPagePublish - Mutation](/api-reference/content-management-api/mutations/collectionPagePublish): Publishes a collection page.
+- [collectionPagePublishBulk - Mutation](/api-reference/content-management-api/mutations/collectionPagePublishBulk): Bulk publish collection pages.
+- [collectionPageRestore - Mutation](/api-reference/content-management-api/mutations/collectionPageRestore): Restores a collection page to a specific revision.
+- [collectionPageUnpublish - Mutation](/api-reference/content-management-api/mutations/collectionPageUnpublish): Unpublishes collection page.
+- [collectionPageUnpublishBulk - Mutation](/api-reference/content-management-api/mutations/collectionPageUnpublishBulk): Bulk unpublish collection pages.
+- [collectionPageUpdate - Mutation](/api-reference/content-management-api/mutations/collectionPageUpdate): Updates a collection page.
+- [collectionPageUpdateBulk - Mutation](/api-reference/content-management-api/mutations/collectionPageUpdateBulk): Allows you to bulk update collection pages.
+- [pageAddSectionsBulk - Mutation](/api-reference/content-management-api/mutations/pageAddSectionsBulk): Assign a sections to multiple pages.
+- [pageCreate - Mutation](/api-reference/content-management-api/mutations/pageCreate): Creates a page.
+- [pageDelete - Mutation](/api-reference/content-management-api/mutations/pageDelete): Deletes a page.
+- [pageDeleteBulk - Mutation](/api-reference/content-management-api/mutations/pageDeleteBulk): Bulk delete pages.
+- [pagePublish - Mutation](/api-reference/content-management-api/mutations/pagePublish): Publishes a page.
+- [pagePublishBulk - Mutation](/api-reference/content-management-api/mutations/pagePublishBulk): Bulk publish pages.
+- [pageRestore - Mutation](/api-reference/content-management-api/mutations/pageRestore): Restores a page to a specific revision.
+- [pageUnpublish - Mutation](/api-reference/content-management-api/mutations/pageUnpublish): Unpublishes page.
+- [pageUnpublishBulk - Mutation](/api-reference/content-management-api/mutations/pageUnpublishBulk): Bulk unpublish pages.
+- [pageUpdate - Mutation](/api-reference/content-management-api/mutations/pageUpdate): Updates a page.
+- [pageUpdateBulk - Mutation](/api-reference/content-management-api/mutations/pageUpdateBulk): Allows you to bulk update pages.
+- [productPageAddSectionsBulk - Mutation](/api-reference/content-management-api/mutations/productPageAddSectionsBulk): Assign a sections to multiple product pages.
+- [productPagePublish - Mutation](/api-reference/content-management-api/mutations/productPagePublish): Publishes a product page.
+- [productPagePublishBulk - Mutation](/api-reference/content-management-api/mutations/productPagePublishBulk): Bulk publish product pages.
+- [productPageRestore - Mutation](/api-reference/content-management-api/mutations/productPageRestore): Restores a product page to a specific revision.
+- [productPageUnpublish - Mutation](/api-reference/content-management-api/mutations/productPageUnpublish): Unpublishes product page.
+- [productPageUnpublishBulk - Mutation](/api-reference/content-management-api/mutations/productPageUnpublishBulk): Bulk unpublish product pages.
+- [productPageUpdate - Mutation](/api-reference/content-management-api/mutations/productPageUpdate): Updates a product page.
+- [productPageUpdateBulk - Mutation](/api-reference/content-management-api/mutations/productPageUpdateBulk): Allows you to bulk update product pages.
+- [scheduleAddContent - Mutation](/api-reference/content-management-api/mutations/scheduleAddContent): Adds content to a schedule by ID.
+- [scheduleCreate - Mutation](/api-reference/content-management-api/mutations/scheduleCreate): Creates a schedule.
+- [scheduleDelete - Mutation](/api-reference/content-management-api/mutations/scheduleDelete): Deletes a schedule.
+- [schedulePublish - Mutation](/api-reference/content-management-api/mutations/schedulePublish): Publishes a schedule.
+- [scheduleUpdate - Mutation](/api-reference/content-management-api/mutations/scheduleUpdate): Updates a schedule.
+- [sectionDelete - Mutation](/api-reference/content-management-api/mutations/sectionDelete): Deletes a section.
+- [sectionDeleteBulk - Mutation](/api-reference/content-management-api/mutations/sectionDeleteBulk): Bulk delete sections.
+- [sectionPublish - Mutation](/api-reference/content-management-api/mutations/sectionPublish): Publishes a section.
+- [sectionPublishBulk - Mutation](/api-reference/content-management-api/mutations/sectionPublishBulk): Bulk publish sections.
+- [sectionRestore - Mutation](/api-reference/content-management-api/mutations/sectionRestore): Restores a section to a specific revision.
+- [sectionUnpublish - Mutation](/api-reference/content-management-api/mutations/sectionUnpublish): Unpublishes section.
+- [sectionUnpublishBulk - Mutation](/api-reference/content-management-api/mutations/sectionUnpublishBulk): Bulk unpublish sections.
+- [sectionUpsert - Mutation](/api-reference/content-management-api/mutations/sectionUpsert): Creates a section.
+- [siteSettingsPublish - Mutation](/api-reference/content-management-api/mutations/siteSettingsPublish): Publishes the site settings.
+- [siteSettingsRestore - Mutation](/api-reference/content-management-api/mutations/siteSettingsRestore): Restores the site settings to a specific revision.
+- [siteSettingsUpdate - Mutation](/api-reference/content-management-api/mutations/siteSettingsUpdate): Updates the site settings.
+- [templateAddSectionsBulk - Mutation](/api-reference/content-management-api/mutations/templateAddSectionsBulk): Assigns sections to multiple templates.
+- [templateCreate - Mutation](/api-reference/content-management-api/mutations/templateCreate): Creates a template.
+- [templateDelete - Mutation](/api-reference/content-management-api/mutations/templateDelete): Deletes a template.
+- [templatePublish - Mutation](/api-reference/content-management-api/mutations/templatePublish): Publishes a template.
+- [templatePublishBulk - Mutation](/api-reference/content-management-api/mutations/templatePublishBulk): Bulk-publishes templates.
+- [templateUnpublish - Mutation](/api-reference/content-management-api/mutations/templateUnpublish): Unpublishes a template.
+- [templateUnpublishBulk - Mutation](/api-reference/content-management-api/mutations/templateUnpublishBulk): Bulk-unpublishes templates.
+- [templateUpdate - Mutation](/api-reference/content-management-api/mutations/templateUpdate): Updates a template.
+
+## Optional - API Queries
+- [article - Query](/api-reference/content-management-api/queries/article): Returns an article by ID in a draft or published state.
+- [articleByHandle - Query](/api-reference/content-management-api/queries/articleByHandle): Returns an article by hande in a draft or published state.
+- [articleHistory - Query](/api-reference/content-management-api/queries/articleHistory): Returns array of all revisions for the article by ID paginated by a cursor.
+- [articleRevision - Query](/api-reference/content-management-api/queries/articleRevision): Returns an article's revision.
+- [articles - Query](/api-reference/content-management-api/queries/articles): Returns array of all your articles in a draft or published state paginated by a cursor.
+- [blog - Query](/api-reference/content-management-api/queries/blog): Returns a blog by ID in a draft or published state.
+- [blogByHandle - Query](/api-reference/content-management-api/queries/blogByHandle): Returns a blog by hande in a draft or published state.
+- [blogHistory - Query](/api-reference/content-management-api/queries/blogHistory): Returns array of all revisions for the blog by ID paginated by a cursor.
+- [blogRevision - Query](/api-reference/content-management-api/queries/blogRevision): Returns a blog's revision.
+- [blogs - Query](/api-reference/content-management-api/queries/blogs): Returns array of all your blogs in a draft or published state paginated by a cursor.
+- [collectionPage - Query](/api-reference/content-management-api/queries/collectionPage): Returns a collection page by ID in a draft or published state.
+- [collectionPageByHandle - Query](/api-reference/content-management-api/queries/collectionPageByHandle): Returns a collection page by hande in a draft or published state.
+- [collectionPageHistory - Query](/api-reference/content-management-api/queries/collectionPageHistory): Returns array of all revisions for the collection page by ID paginated by a cursor.
+- [collectionPageRevision - Query](/api-reference/content-management-api/queries/collectionPageRevision): Returns a collection page's revision.
+- [collectionPages - Query](/api-reference/content-management-api/queries/collectionPages): Returns array of all your collection pages in a draft or published state paginated by a cursor.
+- [faviconUploadUrl - Query](/api-reference/content-management-api/queries/faviconUploadUrl): Returns the favicon upload URL.
+- [page - Query](/api-reference/content-management-api/queries/page): Returns a page by ID in a draft or published state.
+- [pageByHandle - Query](/api-reference/content-management-api/queries/pageByHandle): Returns a page by hande in a draft or published state.
+- [pageHistory - Query](/api-reference/content-management-api/queries/pageHistory): Returns array of all revisions for the page by ID paginated by a cursor.
+- [pageRevision - Query](/api-reference/content-management-api/queries/pageRevision): Returns a page's revision.
+- [pages - Query](/api-reference/content-management-api/queries/pages): Returns array of all your pages in a draft or published state paginated by a cursor.
+- [productPage - Query](/api-reference/content-management-api/queries/productPage): Returns a product page by ID in a draft or published state.
+- [productPageByHandle - Query](/api-reference/content-management-api/queries/productPageByHandle): Returns a product page by hande in a draft or published state.
+- [productPageHistory - Query](/api-reference/content-management-api/queries/productPageHistory): Returns array of all revisions for the product page by ID paginated by a cursor.
+- [productPageRevision - Query](/api-reference/content-management-api/queries/productPageRevision): Returns a product page's revision.
+- [productPages - Query](/api-reference/content-management-api/queries/productPages): Returns array of all your product pages in a draft or published state paginated by a cursor.
+- [schedule - Query](/api-reference/content-management-api/queries/schedule): Returns a schedule by ID.
+- [schedules - Query](/api-reference/content-management-api/queries/schedules): Returns a list of schedules paginated by a cursor.
+- [schedulesByContentId - Query](/api-reference/content-management-api/queries/schedulesByContentId): Returns a list of schedules that contain a content ID paginated by a cursor.
+- [section - Query](/api-reference/content-management-api/queries/section): Returns a section by ID in a draft or published state.
+- [sectionHistory - Query](/api-reference/content-management-api/queries/sectionHistory): Returns array of all revisions for the section by ID paginated by a cursor.
+- [sectionHistory - Query](/api-reference/content-management-api/queries/sectionReferences): Returns array of all revisions for the section by ID paginated by a cursor.
+- [sectionRevision - Query](/api-reference/content-management-api/queries/sectionRevision): Returns a section's revision.
+- [sections - Query](/api-reference/content-management-api/queries/sections): Returns array of all your sections in a draft or published state paginated by a cursor.
+- [siteSettings - Query](/api-reference/content-management-api/queries/siteSettings): Returns the site settings in a draft or published state.
+- [siteSettingsHistory - Query](/api-reference/content-management-api/queries/siteSettingsHistory): Returns an array of all revisions for the site settings by ID paginated by a cursor.
+- [siteSettingsRevision - Query](/api-reference/content-management-api/queries/siteSettingsRevision): Returns a site settings' revision.
+- [template - Query](/api-reference/content-management-api/queries/template): Returns a template by ID in a draft or published state.
+- [templateHistory - Query](/api-reference/content-management-api/queries/templateHistory): Returns an array of all revisions for the template by ID paginated by a cursor.
+- [templateReferences - Query](/api-reference/content-management-api/queries/templateReferences): Returns a list of references where the template is used.
+- [templates - Query](/api-reference/content-management-api/queries/templates): Returns an array of all your templates in a draft or published state paginated by a cursor.

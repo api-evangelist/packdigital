@@ -1,0 +1,41 @@
+generated: '2026-07-20'
+method: probed
+source: probe of /.well-known/ on packdigital.com hosts
+notes: >-
+  No real .well-known documents are published. app.packdigital.com is a SPA that
+  returns HTTP 200 with the app HTML shell for any /.well-known/ path (soft-404),
+  so none of the 200 responses below are valid discovery documents. Recorded
+  honestly; no WellKnown/SecurityTxt scoring pointer is emitted.
+hosts:
+  - host: https://app.packdigital.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        valid: false
+        note: returns SPA HTML shell (soft-404), not RFC 9116 text
+      - path: /.well-known/openid-configuration
+        status: 200
+        valid: false
+        note: returns SPA HTML shell (soft-404)
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        valid: false
+        note: returns SPA HTML shell (soft-404)
+      - path: /.well-known/api-catalog
+        status: 200
+        valid: false
+        note: returns SPA HTML shell (soft-404)
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        valid: false
+        note: returns SPA HTML shell (soft-404)
+  - host: https://packdigital.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        valid: false
+  - host: https://docs.packdigital.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        valid: false

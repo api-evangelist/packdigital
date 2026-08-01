@@ -1,0 +1,39 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.packdigital.com/api-reference/content-management-api
+api_style: graphql
+endpoint: https://app.packdigital.com/graphql
+authentication:
+  style: token
+  header: Authorization
+  token_types: [secret (read-write), public (read-only)]
+  ref: authentication/packdigital-authentication.yml
+pagination:
+  style: cursor
+  spec: relay-connection
+  params: [first, last, after, before]
+  response_fields: [edges, node, pageInfo, cursor]
+  notes: List queries (pages, articles, blogs, sections, schedules, history) are paginated by cursor.
+content_state:
+  states: [draft, published]
+  notes: Queries and mutations operate on draft or published content state.
+content_releases:
+  header: X-Pack-Release-Id
+  notes: Staged/coordinated publishing — scope requests to a content release for review-then-ship workflows.
+environments:
+  header: x-pack-content-environment-id
+  default: production
+  notes: Content environments allow independent versions of content; MCP requests can target a specific environment.
+localization:
+  notes: Translated content is fetched via GraphQL; locale-aware content supported through environments.
+revisions:
+  notes: Every content type exposes history/revision queries and *Restore mutations to roll back to a prior revision.
+idempotency:
+  supported: false
+  notes: No idempotency-key header is documented; mutations are addressed by content ID.
+error_model:
+  style: graphql
+  ref: errors/packdigital-problem-types.yml
+  notes: Errors are returned in the GraphQL top-level errors[] array (not RFC 9457 problem+json).
+rate_limits:
+  documented: false

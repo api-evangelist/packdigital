@@ -1,27 +1,125 @@
 aid: packdigital
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/packdigital.png
 name: Packdigital
-description: 'Packdigital is a company surfaced as a portfolio company of norwest-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: >-
+  Pack Digital is a digital experience platform purpose-built for Shopify Hydrogen that lets
+  AI agents and human teams collaborate on headless storefronts: agents draft changes, the team
+  reviews them in content releases, and you ship when ready. Pack pairs a visual Customizer,
+  server-side A/B testing, media and localization, and the open-source Blueprint Hydrogen theme
+  with a developer surface — a GraphQL Content Management API, JavaScript SDKs (@pack/client,
+  @pack/react, @pack/hydrogen, @pack/types), and an official hosted MCP server for agent-native
+  content editing, publishing, scheduling, and testing. Backed by Norwest Venture Partners.
 url: https://raw.githubusercontent.com/api-evangelist/packdigital/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - norwest-venture-partners
-x-tier: stub
+x-tier: profiled
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
-apis: []
+- Content Management
+- Headless Commerce
+- Shopify
+- Hydrogen
+- CMS
+- A/B Testing
+- GraphQL
+- MCP
+- Agents
+- Storefront
+apis:
+- name: Pack Content Management API
+  description: >-
+    GraphQL API to programmatically manage Shopify Hydrogen storefront content — pages, product
+    pages, collection pages, blogs, articles, sections, templates, site settings, schedules, and
+    revisions — with draft/published states, cursor pagination, and content releases.
+  humanURL: https://docs.packdigital.com/api-reference/content-management-api
+  baseURL: https://app.packdigital.com/graphql
+  tags:
+  - GraphQL
+  - Content Management
+  - CMS
+  properties:
+  - type: GraphQL
+    url: https://app.packdigital.com/graphql
+  - type: APIReference
+    url: https://docs.packdigital.com/api-reference/content-management-api
+  - type: Documentation
+    url: https://docs.packdigital.com/api-reference/content-management-api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 15
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/packdigital-domain-security.yml
 - type: Website
   url: https://packdigital.com
+- type: DeveloperPortal
+  url: https://docs.packdigital.com
+- type: Documentation
+  url: https://docs.packdigital.com
+- type: APIReference
+  url: https://docs.packdigital.com/api-reference/content-management-api
+- type: GettingStarted
+  url: https://docs.packdigital.com/getting-started/quickstart
+- type: Support
+  url: https://docs.packdigital.com/getting-started/faq
+- type: Blog
+  url: https://packdigital.com/blogs/blog
+- type: GitHubOrganization
+  url: https://github.com/packdigital
+- type: Pricing
+  url: https://packdigital.com/pages/pricing
+- type: SignUp
+  url: https://app.packdigital.com/signup
+- type: Login
+  url: https://app.packdigital.com/login
+- type: TermsOfService
+  url: https://packdigital.com/pages/terms-of-service
+- type: PrivacyPolicy
+  url: https://packdigital.com/pages/privacy-policy
+- type: MCPServer
+  url: mcp/packdigital-mcp.yml
+- type: LLMsTxt
+  url: llms/packdigital-llms.txt
+- type: Packages
+  url: packages/packdigital-packages.yml
+- type: SDKs
+  url: packages/packdigital-packages.yml
+- type: Authentication
+  url: authentication/packdigital-authentication.yml
+- type: Conventions
+  url: conventions/packdigital-conventions.yml
+- type: DataModel
+  url: data-model/packdigital-data-model.yml
+- type: Conformance
+  url: conformance/packdigital-conformance.yml
+- type: ErrorCatalog
+  url: errors/packdigital-problem-types.yml
+- type: Components
+  url: components/packdigital-components.yml
+- type: AgentSkill
+  url: skills/_index.yml

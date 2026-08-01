@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.npmjs.com/org/pack
+packages:
+  - language: javascript
+    registry: npm
+    name: "@pack/hydrogen"
+    version: 3.2.7
+    description: Clients and utilities to get Pack running on your Shopify Hydrogen storefront.
+    url: https://www.npmjs.com/package/@pack/hydrogen
+    install: npm install @pack/hydrogen
+    license: MIT
+    docs: https://docs.packdigital.com/api-reference/pack-hydrogen
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@pack/react"
+    version: 4.3.2
+    description: SDKs and components to connect a React app with Pack.
+    url: https://www.npmjs.com/package/@pack/react
+    install: npm install @pack/react
+    license: MIT
+    docs: https://docs.packdigital.com/api-reference/pack-react
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@pack/client"
+    version: 1.0.3
+    description: Client for interacting with the Pack GraphQL API.
+    url: https://www.npmjs.com/package/@pack/client
+    install: npm install @pack/client
+    license: MIT
+    docs: https://docs.packdigital.com/api-reference/pack-client
+    official: true
+  - language: javascript
+    registry: npm
+    name: "@pack/types"
+    description: TypeScript definitions for Pack projects (sections and data type-checking).
+    url: https://www.npmjs.com/package/@pack/types
+    install: npm install @pack/types
+    license: MIT
+    docs: https://docs.packdigital.com/api-reference/pack-types
+    official: true

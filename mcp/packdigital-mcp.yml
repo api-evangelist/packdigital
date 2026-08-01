@@ -1,0 +1,40 @@
+generated: '2026-07-20'
+method: searched
+status: published
+source: https://docs.packdigital.com/developer-resources/pack-mcp
+server:
+  name: pack
+  transport: http
+  url: https://pack-agent.packdigital.workers.dev/mcp
+  authentication:
+    scheme: bearer
+    headers:
+      - name: Authorization
+        value: "Bearer <PACK_ACCESS_TOKEN>"
+      - name: x-pack-store-id
+        value: "<PACK_STORE_ID>"
+      - name: x-pack-content-environment-id
+        value: production
+        required: false
+description: >-
+  Official remote MCP server that connects AI assistants to Pack to search,
+  edit, preview, publish, schedule, and A/B test Shopify Hydrogen storefront
+  content. Backed by the Pack GraphQL Content Management API.
+# Tool families as documented (individual tool names not all published verbatim).
+tool_families:
+  - name: content-management
+    description: Read, list, update, publish, and unpublish pages, product pages, collection pages, blogs, articles, templates, sections, and site settings.
+  - name: search-and-history
+    description: Search content, inspect revisions, review references, and compare draft changes.
+  - name: environments
+    description: Inspect content environments, target a specific environment, and manage locale-aware content.
+  - name: preview-urls
+    description: List, create, update, and delete preview URLs.
+  - name: scheduling
+    description: Inspect and manage scheduled content.
+  - name: product-data
+    description: Search and read product catalog data and trigger product synchronization.
+  - name: ab-testing
+    description: List tests, update tests and variants, manage test lifecycle (start, pause, end, delete), and retrieve saved goal metrics.
+limitations:
+  - Some admin-only workflows are not yet available (media-manager uploads, A/B goal creation or deletion).

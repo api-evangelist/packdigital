@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.packdigital.com/api-reference/content-management-api
+docs: https://docs.packdigital.com/api-reference/content-management-api
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  oauth2_flows: []
+  notes: >-
+    Token-based auth. A Pack access token is passed in the Authorization header
+    on every GraphQL request. Two token types exist: a Secret Token (read + write)
+    and a Public Token (read-only). The MCP server uses the same bearer token plus
+    a store-id header.
+schemes:
+  - name: PackAccessToken
+    type: apiKey
+    in: header
+    parameter: Authorization
+    token_types:
+      - name: secret
+        access: read-write
+      - name: public
+        access: read-only
+    applies_to:
+      - https://app.packdigital.com/graphql
+  - name: PackMCPBearer
+    type: http
+    scheme: bearer
+    parameter: Authorization
+    additional_headers:
+      - x-pack-store-id
+      - x-pack-content-environment-id
+    applies_to:
+      - https://pack-agent.packdigital.workers.dev/mcp

@@ -1,0 +1,84 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.packdigital.com/llms.txt
+notes: >-
+  Entity graph derived from the Pack Content Management GraphQL query/mutation
+  surface (content types, section composition, scheduling, and revisions).
+entities:
+  - name: Storefront
+    description: A Pack-managed Shopify Hydrogen storefront (or shop), the top-level content container.
+  - name: SiteSettings
+    description: Global, site-wide settings and content for a storefront (header, footer, etc.).
+  - name: Page
+    id_field: id
+    handle_field: handle
+    description: A CMS page composed of sections.
+  - name: ProductPage
+    id_field: id
+    handle_field: handle
+    description: A product-detail page composed of sections.
+  - name: CollectionPage
+    id_field: id
+    handle_field: handle
+    description: A collection page composed of sections.
+  - name: Blog
+    id_field: id
+    handle_field: handle
+    description: A blog that contains articles.
+  - name: Article
+    id_field: id
+    handle_field: handle
+    description: A blog article composed of sections.
+  - name: Section
+    id_field: id
+    description: A reusable content block; the composable unit placed on pages/articles/templates.
+  - name: Template
+    id_field: id
+    description: A reusable page layout that sections are assigned to.
+  - name: Schedule
+    id_field: id
+    description: A scheduled publish/unpublish job holding one or more content items.
+  - name: Revision
+    description: A historical version of any content entity, restorable via *Restore mutations.
+  - name: PreviewUrl
+    description: A shareable preview link for unpublished/draft content.
+relationships:
+  - from: Storefront
+    to: SiteSettings
+    type: has_one
+  - from: Blog
+    to: Article
+    type: has_many
+    via: blog
+  - from: Page
+    to: Section
+    type: has_many
+    via: sections
+  - from: ProductPage
+    to: Section
+    type: has_many
+    via: sections
+  - from: CollectionPage
+    to: Section
+    type: has_many
+    via: sections
+  - from: Article
+    to: Section
+    type: has_many
+    via: sections
+  - from: Template
+    to: Section
+    type: has_many
+    via: sections
+  - from: Page
+    to: Template
+    type: belongs_to
+    via: template
+  - from: Schedule
+    to: Page
+    type: has_many
+    via: contentId
+  - from: Page
+    to: Revision
+    type: has_many
+    via: history

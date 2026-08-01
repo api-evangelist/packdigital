@@ -1,0 +1,29 @@
+generated: '2026-07-20'
+method: derived
+source: https://docs.packdigital.com/api-reference/content-management-api
+format: graphql
+notes: >-
+  Pack's Content Management API is GraphQL. Errors are returned in the top-level
+  `errors[]` array of the GraphQL response (each with `message` and optional
+  `extensions`), not as RFC 9457 problem+json. The classes below are derived from
+  the documented operation surface (token auth, ID-addressed mutations, cursor
+  pagination) rather than from a published error registry.
+envelope:
+  field: errors
+  item_fields: [message, path, locations, extensions]
+problems:
+  - class: authentication
+    cause: Missing or invalid Pack access token in the Authorization header.
+    remediation: Provide a valid secret or public token; use a secret token for write mutations.
+  - class: authorization
+    cause: Public (read-only) token used for a write mutation, or token lacks store access.
+    remediation: Use a secret token scoped to the target store.
+  - class: not_found
+    cause: Content ID or handle does not resolve (e.g. page, article, section, template, schedule).
+    remediation: Verify the id/handle and content environment.
+  - class: validation
+    cause: Invalid mutation input (bad field, malformed section schema, missing required argument).
+    remediation: Correct the input to match the Section Schema API / GraphQL types.
+  - class: bad_request
+    cause: Malformed GraphQL query or unknown field/operation.
+    remediation: Validate the query against the GraphQL schema.

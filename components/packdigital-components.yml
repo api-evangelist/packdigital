@@ -1,0 +1,19 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.packdigital.com/api-reference/pack-react
+notes: >-
+  Client-side / embeddable UI building blocks Pack ships for Shopify Hydrogen
+  storefronts. These are distinct from the server/GraphQL SDK client; they render
+  Pack-managed content and sections inside a React/Hydrogen app.
+families:
+  - name: Pack React components
+    package: "@pack/react"
+    docs: https://docs.packdigital.com/api-reference/pack-react
+    description: SDKs and prebuilt React components that connect a React app to Pack and render managed sections.
+  - name: Blueprint theme sections
+    repo: https://github.com/packdigital/pack-hydrogen-theme-blueprint
+    docs: https://docs.packdigital.com/developer-resources/blueprint-sections
+    description: Component-based, production-tested Hydrogen theme with a versatile library of storefront sections.
+  - name: Customizer section hotspots
+    docs: https://docs.packdigital.com/developer-resources/customizer-ui
+    description: Section field hotspots/overlay that surface editable fields in the visual Customizer.
