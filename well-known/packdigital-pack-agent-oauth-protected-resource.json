@@ -1,0 +1,1 @@
+{"resource":"https://pack-agent.packdigital.workers.dev/mcp","authorization_servers":["https://pack-agent.packdigital.workers.dev"],"scopes_supported":["pack:mcp"],"bearer_methods_supported":["header"],"resource_name":"Pack"}
