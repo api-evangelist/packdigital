@@ -48,13 +48,13 @@ tags:
 - Content Management
 - Headless Commerce
 - Shopify
-- Hydrogen
 - CMS
 - A/B Testing
 - GraphQL
 - MCP
 - Agents
 - Storefront
+- Shopify Hydrogen
 apis:
 - name: Pack Content Management API
   description: >-
@@ -135,3 +135,5 @@ common:
   url: components/packdigital-components.yml
 - type: AgentSkill
   url: skills/_index.yml
+x-tags-removed:
+- Hydrogen
