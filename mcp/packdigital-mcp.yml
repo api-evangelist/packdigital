@@ -45,3 +45,19 @@ deployment:
   probe: gated
   checked: '2026-08-12'
   source: catalog MCP census
+rfc9728:
+  endpoint: https://pack-agent.packdigital.workers.dev/mcp
+  metadata_url: https://pack-agent.packdigital.workers.dev/.well-known/oauth-protected-resource/mcp
+  discovered_via: WWW-Authenticate resource_metadata on an anonymous POST initialize
+  fetched: '2026-09-25'
+  http_status: 200
+  content_type: application/json
+  document:
+    resource: https://pack-agent.packdigital.workers.dev/mcp
+    authorization_servers:
+    - https://pack-agent.packdigital.workers.dev
+    scopes_supported:
+    - pack:mcp
+    bearer_methods_supported:
+    - header
+    resource_name: Pack
